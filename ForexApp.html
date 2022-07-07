@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex App</title>
+</head>
+<body>
+    <div class="converter">
+        <span class="item" id="amount">{{amount}}</span>
+        <span class="item"> -></span>
+        <span class="item" id="calculation">{{calculation}}</span>
+
+        <span class="item" id="base">{{base}}</span>
+        <span class="item"> -> </span>
+        <span class="item" id="to">{{to}}</span>
+        <span id="last_update">{{last_update}}</span>
+    </div>
+
+    <div class="currency-information">
+    <h3>{{base + to}}</h3>
+    <span>1 {{base}} = {{value}} {{to}}</span>
+    <span><b>Day-to-Day Difference:</b>{{difference}}</span>
+    <span><b>Daily Change:</b>{{change}}%</span>
+    </div>
+</body>
+</html>
